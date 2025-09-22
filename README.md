@@ -8,6 +8,11 @@
 
 &emsp; A maior parte do jogo porém, está em suas funções principais, as quais reagem às interrupções da CPU, principalmente no que tange às entradas dos teclados. As funções principais são `muda_palavra()`, `afere_resultado()` e `feedback()` que tem a função `decidir_feedback()` como auxiliar. A primeira, exibe na tela a próxima palavra, além de aumentar o indíce de resposta do usuário e exibir sua pontuação atual. A segunda verifica que se a resposta digitada pelo usuário corresponde a resposta do gabarito. A última, exibe um dos 15 feedbacks positivos ou o único feedback negativo possível: "Você tem um dever a cumprir; Consulte sua consciência" em vermelho.
 
+&emsp; Por último, roda-se a função `fim_do_jogo()`. Essa função define com base na pontuação do usuário um dos seguintes cenários:
+- Ideal: 5000/5000 pontos;
+- Real: entre 100 e 4900 pontos;
+- Desastre: 0 pontos.
+
 &emsp; A originalidade do jogo se encontra nas palavras que advém do hino da cidade de São Paulo. Ademais, os feedbacks estão diretamente relacionadas à qualidade e a história dos Estado de São Paulo, cuja cadeira de governador é minha aspiração desde os 13 anos.
 
 ## Intruções para rodar
@@ -32,5 +37,11 @@ qemu-system-i386 -kernel kernel
 E divirta-se.
 
 Caso tenha alguma dúvida em como rodar, consulte o seguinte repositório: https://github.com/arjun024/mkeykernel.
+
+## Vídeo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lPT-bcSRxD8?si=Ik5EG1JIrXTzohE9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
 
